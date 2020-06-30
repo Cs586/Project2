@@ -1,6 +1,3 @@
-from Calculator.Subtraction import subtraction
-from Calculator.Addition import addition
-
 
 class Calculator:
     result = 0
@@ -14,4 +11,20 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def division(self, a, b):
+        self.result = division(a, b)
+        return self.result
+
+    def mul(self, a, b):
+        self.result = mul(a, b)
+        return self.result
+
+    def sq(self, a):
+        self.result = sq(a)
+        return self.result
+
+    def sqr(self, a):
+        self.result = sqr(a)
         return self.result
